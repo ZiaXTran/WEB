@@ -1,0 +1,307 @@
+   :root {
+      --primary-color: #FF6B6B;
+      --secondary-color: #4ECDC4;
+      --accent-color: #FFE66D;
+      --dark-color: #292F36;
+      --light-color: #F7FFF7;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-color);
+      color: var(--dark-color);
+    }
+
+    .header {
+      background-color: white;
+      padding: 15px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 110px;
+      margin-right: 60px;
+    }
+
+    .logo-text {
+      font-weight: bold;
+      font-size: 8.5rem;
+      color: var(--primary-color);
+    }
+
+    .nav-container {
+      background-color: var(--accent-color);
+      padding: 10px;
+      border-radius: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--dark-color);
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .nav a:hover {
+      background-color: var(--primary-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* New styles for the login link */
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header-right .login-btn {
+      text-decoration: none;
+      color: var(--dark-color);
+      font-weight: 600;
+      padding: 8px 15px;
+      border: 2px solid var(--primary-color);
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .header-right .login-btn:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      margin-bottom: 30px;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .menu-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .menu-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--primary-color);
+      position: relative;
+    }
+
+    .menu-title:after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: var(--accent-color);
+      margin: 10px auto;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .menu-item-img {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      img{
+        width: 425px;
+        height: 200px;
+      }
+    }
+
+    .menu-item-content {
+      padding: 20px;
+    }
+
+    .menu-item-title {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--dark-color);
+    }
+
+    .menu-item-price {
+      font-weight: bold;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+    }
+
+    .order-btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .order-btn:hover {
+      background-color: var(--dark-color);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+      }
+
+      .logo {
+        margin-bottom: 10px; /* Fixed the 100% typo from earlier */
+      }
+
+      .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .banner h1 {
+        font-size: 2rem;
+      }
+
+      .header-right {
+        margin-top: 10px;
+      }
+    }
+/* Footer Styles */
+footer {
+  background-color: #F28C38; /* Orange background */
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex; /* Changed to flex for exact layout as in the image */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo img {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-logo .hotline {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FF0000; /* Red for the hotline number */
+}
+
+.footer-logo .hotline-label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-section p, .footer-section a {
+  font-size: 0.9rem;
+  color: white;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px; /* Space before the next section */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+}
+
+.certification img {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .certification {
+    display: flex;
+    justify-content: center;
+  }
+}
