@@ -22,7 +22,12 @@
       top: 0;
       z-index: 100;
     }
-
+    .certification{
+      img{
+        width: 100%;
+        height: 50px;
+      }
+    }
     .header-container {
       display: flex;
       justify-content: space-between;
@@ -224,7 +229,7 @@
     }
 /* Footer Styles */
 footer {
-  background-color: #F28C38; /* Orange background */
+  background-color: #ebc714; /* Orange background */
   color: white;
   padding: 40px 20px;
 }
