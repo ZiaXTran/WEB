@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -325,3 +326,332 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB BÁN ĐỒ ĂN VẶT</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="header-container" style="display: flex; align-items: center; gap: 20px; padding: 10px 20px;">
+
+    <!-- Logo -->
+    <div class="logo" style="flex-shrink: 0;">
+      <a href="main.html">
+        <img src="../anvat/Logo_vku-01.jpg" alt="Logo Đồ ăn vặt" style="height: 50px;">
+      </a>
+    </div>
+
+    <!-- Menu -->
+    <nav class="nav" style="
+      background: #ffeb66;
+      border-radius: 25px;
+      padding: 10px 30px;
+      display: flex;
+      gap: 40px;
+      flex-grow: 1;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 16px;
+    ">
+      <a href="#" data-target="banh-trang-tac" style="color: #333; text-decoration: none; padding: 8px 12px; border-radius: 15px; transition: background-color 0.3s;">Bánh tráng tắc</a>
+      <a href="#" data-target="banh-trang-bo" style="color: #333; text-decoration: none; padding: 8px 12px; border-radius: 15px; transition: background-color 0.3s;">Bánh tráng bơ</a>
+      <a href="#" data-target="banh-trang-xi-ke" style="color: #333; text-decoration: none; padding: 8px 12px; border-radius: 15px; transition: background-color 0.3s;">Bánh tráng xì ke</a>
+      <a href="#" data-target="com-chay" style="color: #333; text-decoration: none; padding: 8px 12px; border-radius: 15px; transition: background-color 0.3s;">Cơm cháy</a>
+      <a href="#" data-target="keo" style="color: #333; text-decoration: none; padding: 8px 12px; border-radius: 15px; transition: background-color 0.3s;">Kẹo các loại</a>
+      <a href="#" data-target="moc-khoa" style="color: #333; text-decoration: none; padding: 8px 12px; border-radius: 15px; transition: background-color 0.3s;">Móc khóa</a>
+    </nav>
+
+    <!-- Giỏ hàng -->
+    <a href="Cart.html" class="cart-btn" title="Giỏ hàng" style="font-size: 28px; color: var(--primary-color); margin: 0 20px;">
+      <i class="fas fa-shopping-cart"></i>
+    </a>
+
+    <!-- Đăng nhập -->
+    <a href="login.html" class="login-btn" style="padding: 10px 20px; background: #ffeb66; border-radius: 25px; border: 1px solid #f0c419; text-decoration: none; color: #333;">
+      Đăng Nhập
+    </a>
+  </div>
+</header>
+
+
+<section class="banner">
+  <h1>Đồ Ăn Vặt Ngon - Giá Hạt Dẻ</h1>
+  <p>Chúc các bạn ăn ngon miệng</p>
+</section>
+
+<main class="menu-container">
+  <h2 class="menu-title">THỰC ĐƠN CỦA CHÚNG TÔI</h2>
+  <div class="menu-grid">
+    <div class="menu-item" id="banh-trang-tac">
+      <div class="menu-item-img" style="background-image: url('../anvat/hinh-anh-3.webp');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Bánh tráng tắc</h3>
+        <div class="menu-item-price">10.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+
+    <div class="menu-item" id="banh-trang-bo">
+      <div class="menu-item-img" style="background-image: url('../anvat/sg-11134201-22100-ofy6ke1793iv91.jpg');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Bánh tráng bơ</h3>
+        <div class="menu-item-price">10.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+
+    <div class="menu-item" id="banh-trang-xi-ke">
+      <div class="menu-item-img" style="background-image: url('../anvat/img_8404.jpeg');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Bánh tráng xì ke</h3>
+        <div class="menu-item-price">10.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+
+    <div class="menu-item" id="com-chay">
+      <div class="menu-item-img" style="background-image: url('../anvat/z5338140523123_dba4bc52d8f5f7df0965608557cdfb99_45f56044bece480bbb749d839590975b_master.webp');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Cơm cháy</h3>
+        <div class="menu-item-price">10.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+
+    <div class="menu-item" id="com-chay-khoquet">
+      <div class="menu-item-img" style="background-image: url('../anvat/cach-lam-com-chay-1.jpg');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Cơm cháy kho quẹt</h3>
+        <div class="menu-item-price">20.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+
+    <div class="menu-item" id="com-chay-mohanh">
+      <div class="menu-item-img" style="background-image: url('../anvat/cach-lam-com-chay-mo-hanh-gion-rum-ai-cung-muon-an-1-540.jpg');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Cơm cháy mỡ hành</h3>
+        <div class="menu-item-price">25.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+
+    <div class="menu-item" id="keo">
+      <div class="menu-item-img" style="background-image: url('../anvat/8935001718840.jpg.webp');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Kẹo trái cây</h3>
+        <div class="menu-item-price">10.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+
+    <div class="menu-item" id="keo-chupa">
+      <div class="menu-item-img" style="background-image: url('../anvat/images.jpg');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Kẹo Chupa chups</h3>
+        <div class="menu-item-price">10.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+
+    <div class="menu-item" id="moc-khoa">
+      <div class="menu-item-img" style="background-image: url('../anvat/01691232385e5f7c7ac8762f92ea0299.jpg');"></div>
+      <div class="menu-item-content">
+        <h3 class="menu-item-title">Móc khóa lá cờ</h3>
+        <div class="menu-item-price">20.000 VNĐ</div>
+        <a href="#" class="order-btn">Đặt mua</a>
+      </div>
+    </div>
+  </div>
+</main>
+  <!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <!-- Logo and Contact Info -->
+    <div class="footer-logo">
+      <img src="./anvat/ecofood-logo-template.png" alt="Logo Đồ ăn vặt">
+      <div class="hotline">Hotline: 0819056277</div>
+      <div class="hotline-label">GIAO HÀNG NHANH</div>
+      <p>Cửa hàng Đồ Ăn Vặt Ngon</p>
+      <p>Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn, Đại học Đà Nẵng</p>
+      <p>SĐT: +84 ***************</p>
+      <p>MST: 01041115527</p>
+      <p>Ngày thành lập: 01/04/2025</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Giới Thiệu</h3>
+      <p>Hệ thống cửa hàng</p>
+      <p>Câu chuyện thương hiệu</p>
+      <p>Ưu đãi thành viên</p>
+      <p>Tin tức & sự kiện</p>
+      <p>Tuyển dụng</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Liên Hệ</h3>
+      <a href="#">Hướng dẫn mua hàng</a><br>
+      <a href="#">Chính sách giao hàng</a><br>
+      <a href="#">Chính sách bảo mật</a><br>
+      <a href="#">Điều khoản và điều kiện</a>
+    </div>
+
+    <!-- Liên Kết Với Chúng Tôi (Connect With Us) and Tổng Đài Hỗ Trợ (Support Hotline) -->
+    <div class="footer-section">
+      <h3>Liên Kết Với Chúng Tôi</h3>
+      <div class="social-icons">
+        <a href="#">🟦</a> <!-- Placeholder for Facebook -->
+        <a href="#">📷</a> <!-- Placeholder for Instagram -->
+        <a href="#">▶️</a> <!-- Placeholder for YouTube -->
+      </div>
+      <div class="certification">
+        <img src="./anvat/bocongthuong.png" alt="Đã thông báo Bộ Công Thương">
+      </div>
+      <h3>Tổng Đài Hỗ Trợ</h3>
+      <p>Đặt hàng: ********** (9:30 – 21:30)</p>
+      <p>Tổng đài CSKH: ********** (9:30 – 21:30)</p>
+    </div>
+  </div>
+</footer>
+<div id="productModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+  <div class="modal-content" style="background:#fff; padding:20px; border-radius:10px; width:80%; max-width:600px; position:relative;">
+    <span id="closeModal" style="position:absolute; top:10px; right:20px; cursor:pointer; font-size:24px;">&times;</span>
+    <img id="modalImg" src="" alt="Hình sản phẩm" style="width:100%; border-radius:10px;">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+    <p id="modalPrice" style="font-weight:bold; color:red; font-size:20px;"></p>
+    <button id="addToCartBtn" class="btn-add-cart">Thêm vào giỏ hàng</button>
+  </div>
+</div>
+
+
+<script>
+  const menuLinks = document.querySelectorAll('.nav a');
+  const menuItems = document.querySelectorAll('.menu-item');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // Ngăn hành động mặc định của thẻ <a>
+
+      const target = this.getAttribute('data-target');
+
+      // Ẩn hết tất cả menu-item
+      menuItems.forEach(item => {
+        item.style.display = 'none';
+      });
+
+      // Hiện những menu-item có id chứa target (ví dụ: "banh-trang-tac", "banh-trang-bo", ...)
+      menuItems.forEach(item => {
+        if(item.id.includes(target)) {
+          item.style.display = 'block';
+        }
+      });
+    });
+  });
+  const orderButtons = document.querySelectorAll('.order-btn');
+  const modal = document.getElementById('productModal');
+  const closeModalBtn = document.getElementById('closeModal');
+
+  orderButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const menuItem = button.closest('.menu-item');
+      const title = menuItem.querySelector('.menu-item-title').innerText;
+      const price = menuItem.querySelector('.menu-item-price').innerText;
+      const bgImage = menuItem.querySelector('.menu-item-img').style.backgroundImage;
+
+      // Set thông tin vào modal
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalPrice').innerText = price;
+      document.getElementById('modalDesc').innerText = productDescriptions[title] || "Chưa có mô tả cho sản phẩm này.";
+
+      // Lấy url hình ảnh từ background-image css
+      const matches = bgImage.match(/url\(["']?(.+?)["']?\)/);
+      const imageUrl = matches ? matches[1] : '';
+      document.getElementById('modalImg').src = imageUrl;
+
+      // Hiển thị modal
+      modal.style.display = 'flex';
+    });
+  });
+
+
+  // Đóng modal
+  closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Ngoài ra có thể đóng modal khi click ngoài nội dung
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+  const productDescriptions = {
+
+    "Bánh tráng tắc": "Từng miếng bánh tráng mềm mại như tờ lụa, thấm đẫm hương tắc chua thanh dịu nhẹ. Sa tế cay cay thoảng qua như một cái chạm khẽ nơi đầu lưỡi, hành phi vàng óng gợi nhắc những chiều tan trường lộng gió. Cắn một miếng, hương vị lan tỏa, như thể cả mùa hè bỗng chốc ùa về – rực nắng, đậm tình, ngọt ngào và rất đỗi thân quen.",
+
+    "Bánh tráng bơ": "Giòn rụm từng lớp bánh, vàng ươm như nắng chiều trên mái ngói cũ. Bơ thơm béo quyện cùng ruốc, sa tế, hành phi – tất cả tạo nên một bản hòa âm của tuổi thơ và ký ức. Bánh tráng bơ không chỉ là món ăn, mà là hương vị của những ngày xưa hồn nhiên, ngồi bên nhau cười khúc khích vì một miếng bơ nhiều hơn bạn.",
+
+    "Bánh tráng xì ke": "Cái tên nghe như lời thách thức, và đúng vậy, bánh tráng xì ke là món ăn khiến người ta 'phê' bằng cả giác quan. Vị cay bùng nổ như gió mùa hạ, mặn ngọt đan xen như một bản tình ca không đoạn kết. Ăn một lần là nhớ, nhớ cái vị, nhớ cái cảm giác, nhớ cả tuổi trẻ dại khờ từng rủ nhau trốn tiết đi ăn quà vặt đầu ngõ.",
+
+    "Cơm cháy": "Vàng giòn như nắng, thơm bùi như lúa mới, cơm cháy là món ăn mang hồn cốt của đồng quê vào từng miếng nhỏ. Nhai một lần là nghe tiếng giòn tan như tiếng rơm khô dưới chân, là cảm nhận vị gạo rang đậm đà giản dị, mà sao cứ làm người ta nhớ mãi không nguôi.",
+
+    "Cơm cháy kho quẹt": "Giòn tan cơm cháy, đậm đà kho quẹt – sự kết hợp không thể hoàn hảo hơn của một món ăn 'nhà quê' nhưng đầy tinh tế. Kho quẹt sánh mịn, thoang thoảng mùi tiêu, mùi tỏi – gợi nhắc căn bếp xưa và những bữa cơm chiều mẹ đứng bếp. Ăn một miếng, như được ôm trọn quê hương vào lòng.",
+
+    "Cơm cháy mỡ hành": "Chỉ là cơm cháy thôi mà, nhưng khi mỡ hành vừa rưới lên, hành phi thơm lừng, bỗng chốc hóa thành một tác phẩm. Mỗi miếng ăn là một lần cảm xúc trỗi dậy – béo mà không ngấy, giòn mà không khô, như ký ức về một miền quê giản dị mà khó quên.",
+
+    "Kẹo trái cây": "Những viên kẹo nhỏ xinh, rực rỡ sắc màu như cầu vồng sau mưa, mang trong mình hương vị của trái cây mùa hè. Ngọt nhẹ, mát dịu, tan dần trên đầu lưỡi như một cái ôm ấm áp từ ký ức. Ăn một viên, là cả tuổi thơ như ùa về – tinh nghịch, vui tươi và rộn ràng tiếng cười.",
+
+    "Kẹo Chupa chups": "Chiếc kẹo que nhỏ nhắn – món quà không chỉ ngọt ngào mà còn mang cả một vùng trời ký ức. Hương vị dâu, nho, cola... thay nhau đan xen như những mảng màu tuổi thơ. Tay cầm que kẹo, miệng nhai vui vẻ – chẳng cần điều gì quá lớn lao, chỉ thế thôi cũng đủ làm nên một ngày đáng nhớ.",
+
+    "Móc khóa lá cờ": "Nhỏ bé mà kiêu hãnh, móc khóa lá cờ mang theo trong mình niềm tự hào âm thầm mà sâu sắc. Không chỉ là vật trang trí, đó là biểu tượng – là nét chấm phá đậm đà của tình yêu quê hương nơi những món đồ thường nhật. Treo trên balo, lủng lẳng nơi chìa khóa – nhưng trái tim thì luôn rạo rực vì gốc gác mình mang theo."
+
+
+  };
+  const addToCartBtn = document.getElementById('addToCartBtn');
+
+  addToCartBtn.addEventListener('click', () => {
+    const title = document.getElementById('modalTitle').innerText;
+    const price = document.getElementById('modalPrice').innerText;
+
+    // Lấy giỏ hàng hiện tại từ localStorage hoặc tạo mới
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Thêm sản phẩm mới vào giỏ hàng
+    cart.push({ title, price, quantity: 1 });
+
+    // Lưu lại vào localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert(`Đã thêm "${title}" vào giỏ hàng!`);
+
+    // Bạn có thể đóng modal hoặc không tùy ý
+    // modal.style.display = 'none';
+  });
+  const navLinks = document.querySelectorAll('.nav a');
+  navLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      link.style.backgroundColor = '#f7d94c';
+      link.style.color = '#222';
+      link.style.fontWeight = '600';
+    });
+    link.addEventListener('mouseleave', () => {
+      link.style.backgroundColor = 'transparent';
+      link.style.color = '#333';
+      link.style.fontWeight = '500';
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
+>>>>>>> 71ebd6b (capnhat)
