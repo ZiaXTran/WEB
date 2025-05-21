@@ -139,7 +139,7 @@
     </div>
   </div>
 </main>
-  <!-- Footer Section -->
+<!-- Footer Section -->
 <footer>
   <div class="footer-container">
     <!-- Logo and Contact Info -->
@@ -289,13 +289,16 @@
   addToCartBtn.addEventListener('click', () => {
     const title = document.getElementById('modalTitle').innerText;
     const price = document.getElementById('modalPrice').innerText;
+    const imageUrl = document.getElementById('modalImg').src;
 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+    cart.push({ title, price, quantity: 1, image: imageUrl });
 
     localStorage.setItem('cart', JSON.stringify(cart));
 
     alert(`Đã thêm "${title}" vào giỏ hàng!`);
+  });
 
   const navLinks = document.querySelectorAll('.nav a');
   navLinks.forEach(link => {
