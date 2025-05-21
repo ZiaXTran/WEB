@@ -38,12 +38,10 @@
       <a href="#" data-target="moc-khoa" style="color: #333; text-decoration: none; padding: 8px 12px; border-radius: 15px; transition: background-color 0.3s;">Móc khóa</a>
     </nav>
 
-    <!-- Giỏ hàng -->
     <a href="Cart.html" class="cart-btn" title="Giỏ hàng" style="font-size: 28px; color: var(--primary-color); margin: 0 20px;">
       <i class="fas fa-shopping-cart"></i>
     </a>
 
-    <!-- Đăng nhập -->
     <a href="login.html" class="login-btn" style="padding: 10px 20px; background: #ffeb66; border-radius: 25px; border: 1px solid #f0c419; text-decoration: none; color: #333;">
       Đăng Nhập
     </a>
@@ -291,21 +289,17 @@
   addToCartBtn.addEventListener('click', () => {
     const title = document.getElementById('modalTitle').innerText;
     const price = document.getElementById('modalPrice').innerText;
+    const imageUrl = document.getElementById('modalImg').src;
 
-    // Lấy giỏ hàng hiện tại từ localStorage hoặc tạo mới
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Thêm sản phẩm mới vào giỏ hàng
-    cart.push({ title, price, quantity: 1 });
+    cart.push({ title, price, quantity: 1, image: imageUrl });
 
-    // Lưu lại vào localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
 
     alert(`Đã thêm "${title}" vào giỏ hàng!`);
-
-    // Bạn có thể đóng modal hoặc không tùy ý
-    // modal.style.display = 'none';
   });
+
   const navLinks = document.querySelectorAll('.nav a');
   navLinks.forEach(link => {
     link.addEventListener('mouseenter', () => {
@@ -319,6 +313,7 @@
       link.style.fontWeight = '500';
     });
   });
+
 </script>
 
 
